@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="constants.js"></script>
+   
+    <script type="text/javascript" src="GameEngine.js"></script>
+    <script type="text/javascript" src="GUI.js"></script>
+    
+    <script type="text/javascript" src="Direction.js"></script>
+    <script type="text/javascript" src="cell.js"></script>
+    <script type="text/javascript" src="snakeboard.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+
+</head>
+<body onload="run();">
+    <div id="container" style="position: absolute; left: 0px; top: 0px; width: 900px; height: 600px;">
+    <div id="canvas" style="float: left; width: 600px; height: 600px; background-color:black">
+        <div id="content">
+            
+        </div>
+
+          
+    </div>
+
+    <div id="scoreContainer" style="float: left; height: 300px; width: 300px; background-color: white;">
+
+        <div align="center">
+            <h2 id="playerScore"></h2>
+        </div>
+
+        <div id="highscores" style="visibility: hidden;">
+        <div ><h1 id="playerBestScore" align="center"></h1>
+        </div>    
+
+        <div ><h3 id="firstHighScore" align="center"></h3>
+        </div>
+
+        <div ><h4 id="secondHighScore" align="center"></h4>
+        </div>
+
+        <div ><h5 id="thirdHighScore" align="center"></h5>
+        </div>
+        </div>
+
+    </div>
+      
+
+    <div class="gameOverPanel" id="gameOverPanel" style="float: left; height:300px; width:300px; background-color:gray; visibility: hidden;">
+        <br>
+        <h2 align="center">You dieded! x_x </h2>
+
+        <br>
+        <div align="center">
+            <button id="restartButton" type="button" style="display: inline-block;" onclick="restartGame();"> Restart the wiggle!</button>
+        </div>
+        
+    </div>
+    </div>
+</body>
