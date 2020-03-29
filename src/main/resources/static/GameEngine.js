@@ -104,13 +104,13 @@ function displayTopScores(){
 function callTopScoresAPI(){
     fetch(httpRequestParams.url + "top?limit=3")
     .then(res => res.json())
-    .then(res => handleTopScoresAPIResponse());
+    .then(res => handleTopScoresAPIResponse(res));
 }
 
 function callPlayerTopScoreAPI(){
     fetch(httpRequestParams.url + "personalTop")
     .then(res => res.json())
-    .then(res => handlePlayerTopScoreAPIResponse())
+    .then(res => handlePlayerTopScoreAPIResponse(res))
 }
 
 function handleTopScoresAPIResponse(response) {
