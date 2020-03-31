@@ -90,7 +90,7 @@ function saveScore(score){
     }
 
     var postScoreRequestParams = httpRequestParams;
-    postScoreRequestParams.data = {"score": score};
+    postScoreRequestParams.score = score;
     postScoreRequestParams.success = displayTopScores();
     
     ajaxCall(postScoreRequestParams);

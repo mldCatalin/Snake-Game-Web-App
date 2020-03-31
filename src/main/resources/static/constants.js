@@ -8,12 +8,12 @@ const UserInputDirection = {UP: 38, DOWN: 40, LEFT: 37, RIGHT: 39};
 
 var httpRequestParams = {
     "url": "http://localhost:8080/highscores/",
-    "method": "",
+    "method": "POST",
     "timeout": 0,
     "headers": {
         "Content-Type": "application/json"
     },
-    "data": "",
+    "score": "",
     "dataType": "json",
     "success": "",
 }
